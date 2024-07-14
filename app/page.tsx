@@ -102,7 +102,7 @@ export default function Home() {
   );
 }
 
-export function ShadowCard(props: {children: ReactNode}) {
+function ShadowCard(props: {children: ReactNode}) {
   return (
     <div className="border-[1.25px] border-black shadow-div bg-white pl-[2.5rem] pr-[1.5rem] py-[1.5rem] flex justify-center items-center rounded-md">
       {props.children}
@@ -110,7 +110,7 @@ export function ShadowCard(props: {children: ReactNode}) {
   )
 }
 
-export function ImageCard(props: { children: ReactNode }) {
+function ImageCard(props: { children: ReactNode }) {
   return (
     <div className="border-[1.25px] border-black p-4 shadow-div bg-white flex justify-center items-center rounded-md pt-[1.75rem] pb-[2.25rem] px-[3rem]">
       {props.children}
