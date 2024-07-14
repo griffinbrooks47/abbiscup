@@ -27,7 +27,7 @@ export function Navbar() {
                 border-t-[1.35px] border-t-[rgba(0,0,0,0.1)] bg-white
              ">
                 <NavButton>
-                    Abbi's Story
+                    {`Abbi&apos;s Story`}
                 </NavButton>
                 <NavButton>
                     Events

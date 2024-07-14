@@ -27,7 +27,7 @@ export default function Home() {
             <div className="w-[27.5rem] h-auto">
               <div className="text-xl leading-[2.05rem]">
                 <ShadowCard>
-                  {"A soccer tournament designed to raise awareness for mental health, while encouraging Abbi's core values of courage, kindness, and inclusivity."}
+                  {`A soccer tournament designed to raise awareness for mental health, while encouraging Abbi&apos;s core values of courage, kindness, and inclusivity.`}
                 </ShadowCard>
               </div>
             </div>
@@ -71,7 +71,7 @@ export default function Home() {
         <div className="flex justify-center w-full">
           <div className="flex flex-col justify-center items-left h-full mr-[4rem]">
             <div className="w-[27.5rem] opacity-[90%] my-[1.5rem]">
-              <p className="text-[1.05rem] text-center pt-[2rem] w-[27.5rem]">Although the depth of her illness wasn’t always evident, she struggled for many years with OCD, which in turn created high levels of anxiety and eventually depression. Her condition was not responsive to traditional therapies and treatments and became more debilitating and intrusive. Abbi faced every day with a relentless disease for as long as she could before her suffering ended at the age of 16 on March 5, 2024. </p>
+              <p className="text-[1.05rem] text-center pt-[2rem] w-[27.5rem]">{`Although the depth of her illness wasn&apos;t always evident, she struggled for many years with OCD, which in turn created high levels of anxiety and eventually depression. Her condition was not responsive to traditional therapies and treatments and became more debilitating and intrusive. Abbi faced every day with a relentless disease for as long as she could before her suffering ended at the age of 16 on March 5, 2024.`}</p>
             </div>
             <hr className="mt-[1rem] mb-[1rem] mx-auto border-t-[0.5px] border-black "></hr>
           </div>
