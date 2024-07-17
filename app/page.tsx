@@ -60,10 +60,10 @@ export default function Home() {
             }}></Image>
           <div className="text-container flex flex-col justify-center">
             <h1 className="text-4xl pt-[3rem]">Abigail Agosta</h1>
+            <hr className="w-[70%] mt-[0.75rem] mx-auto border-t-[0.5px] border-[rgba(0,0,0,0.35)]"></hr>
             <div className="opacity-[90%] mt-[0.75rem] mb-[2rem]">
               <p className="">Abigail (Abbi) Agosta was an amazing young woman who struggled with OCD from a very young age.  Despite this, she was a kind and loyal friend, a high achiever academically, and a talented and fierce competitor on the soccer field. She began playing soccer at the age of 5 and went on to become a goalkeeper for top teams in the DA, GA, and ECNL soccer organizations.</p>
             </div>
-            <hr className="mt-[1rem] mb-[1rem] mx-auto border-t-[0.5px] border-black "></hr>
           </div>
         </div>
       </section>
