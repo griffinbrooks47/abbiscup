@@ -101,7 +101,7 @@ export default function Home() {
 
 function ShadowCard(props: {children: ReactNode}) {
   return (
-    <div className="border-[1.25px] border-black shadow-div bg-white pl-[1.75rem] md:pl-[2.25rem] pr-[1.25rem] py-[1.5rem] flex justify-center items-center rounded-md">
+    <div className="border-[1.25px] border-black shadow-div bg-white pl-[1.75rem] md:pl-[2.25rem] pr-[1.35rem] py-[1.5rem] flex justify-center items-center rounded-md">
       {props.children}
     </div>
   )
