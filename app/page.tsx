@@ -17,7 +17,7 @@ export default function Home() {
       <main className="h-vp-nav flex flex-col justify-center items-center bg-[#F5F5F5]"
       >
         <div className="flex justify-center w-[100%] flex-col">
-          <div className="flex flex-[45%] justify-center items-center text-[3.5rem] my-[0.25rem] tracking-[-1px]">
+          <div className="flex flex-[45%] justify-center items-center my-[0.25rem] tracking-[-1px]">
             <h1 className={`${title.className} landing-title`}>
               Abbi&apos;s Cup
             </h1>
@@ -28,7 +28,7 @@ export default function Home() {
           {/* Shadow Div Landing. */}
           <div className="flex flex-[55%] justify-center items-center">
             <div className="landing-desc h-auto">
-              <div className="leading-[2.05rem]">
+              <div>
                 <ShadowCard>
                   A soccer tournament designed to raise awareness for mental health, while encouraging Abbi&apos;s core values of courage, kindness, and inclusivity.
                 </ShadowCard>

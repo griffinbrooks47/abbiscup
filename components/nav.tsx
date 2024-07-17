@@ -44,7 +44,7 @@ export function Navbar() {
 
 function NavButton(props: {children: string, link?: string}) {
     return (
-        <button className="h-full text-center mx-[0.65rem] md:mx-6 lgmx-6 opacity-[95%]">
+        <button className="h-full text-center mx-[0.85rem] md:mx-6 lgmx-6 opacity-[95%]">
             {props.children}
         </button>
     )
