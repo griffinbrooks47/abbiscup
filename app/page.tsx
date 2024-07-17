@@ -71,8 +71,8 @@ export default function Home() {
       <section className="section-div flex flex-row m-auto bg-[#F5F5F5]">
         <div className="section-container flex justify-center w-full">
           <div className="flex flex-col justify-center items-left h-full mr-[4rem]">
-            <div className="w-[27.5rem] opacity-[90%] my-[1.5rem]">
-              <p className="text-[1.05rem] text-center pt-[2rem] w-[27.5rem]">Although the depth of her illness wasn&apos;t always evident, she struggled for many years with OCD, which in turn created high levels of anxiety and eventually depression. Her condition was not responsive to traditional therapies and treatments and became more debilitating and intrusive. Abbi faced every day with a relentless disease for as long as she could before her suffering ended at the age of 16 on March 5, 2024.</p>
+            <div className="opacity-[90%] my-[1.5rem]">
+              <p className="text-center pt-[2rem]">Although the depth of her illness wasn&apos;t always evident, she struggled for many years with OCD, which in turn created high levels of anxiety and eventually depression. Her condition was not responsive to traditional therapies and treatments and became more debilitating and intrusive. Abbi faced every day with a relentless disease for as long as she could before her suffering ended at the age of 16 on March 5, 2024.</p>
             </div>
             <hr className="mt-[1rem] mb-[1rem] mx-auto border-t-[0.5px] border-black "></hr>
           </div>
