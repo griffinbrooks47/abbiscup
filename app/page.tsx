@@ -68,7 +68,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="h-section flex flex-row m-auto bg-[#F5F5F5]">
+      <section className="section-div flex flex-row m-auto bg-[#F5F5F5]">
         <div className="section-container flex justify-center w-full">
           <div className="flex flex-col justify-center items-left h-full mr-[4rem]">
             <div className="w-[27.5rem] opacity-[90%] my-[1.5rem]">
