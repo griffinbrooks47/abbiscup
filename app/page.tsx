@@ -22,10 +22,11 @@ export default function Home() {
             <div className="w-[0.4rem]"></div>
             <IconTrophy color="black" fill="yellow" stroke={1.75} size={65}></IconTrophy>
           </div>
-          <hr className="mt-[0.25rem] mb-[1.5rem] w-[25rem] mx-auto border-t-[0.5px] border-black"></hr>
+          <hr className="mt-[0.25rem] mb-[1.5rem] w-[23rem] mx-auto border-t-[0.5px] border-black"></hr>
+          {/* Shadow Div Landing. */}
           <div className="flex flex-[55%] justify-center items-center">
-            <div className="w-[27.5rem] h-auto">
-              <div className="text-xl leading-[2.05rem]">
+            <div className="landing-desc h-auto">
+              <div className="leading-[2.05rem]">
                 <ShadowCard>
                   A soccer tournament designed to raise awareness for mental health, while encouraging Abbi&apos;s core values of courage, kindness, and inclusivity.
                 </ShadowCard>
@@ -37,7 +38,7 @@ export default function Home() {
          
         </div>
       </main>
-      <section className="h-section flex lg:flex-row m-auto sm:flex-col">
+      <section className="section-div flex lg:flex-row m-auto sm:flex-col">
         <div className="flex justify-center w-full">
           <Image
             src="/images/caption.jpg"
@@ -104,7 +105,7 @@ export default function Home() {
 
 function ShadowCard(props: {children: ReactNode}) {
   return (
-    <div className="border-[1.25px] border-black shadow-div bg-white pl-[2.5rem] pr-[1.5rem] py-[1.5rem] flex justify-center items-center rounded-md">
+    <div className="border-[1.25px] border-black shadow-div bg-white pl-[2.25rem] pr-[1.5rem] py-[1.5rem] flex justify-center items-center rounded-md">
       {props.children}
     </div>
   )
