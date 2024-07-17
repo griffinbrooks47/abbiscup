@@ -24,7 +24,7 @@ export default function Home() {
             <div className="w-[0.4rem]"></div>
             <IconTrophy color="black" fill="yellow" stroke={1.75} size={65}></IconTrophy>
           </div>
-          <hr className="mt-[0.25rem] mb-[1.5rem] w-[23rem] mx-auto border-t-[0.5px] border-black"></hr>
+          <hr className="mt-[0.2rem] mb-[1rem] md:w-[23rem] w-[60%] mx-auto border-t-[0.5px] border-black"></hr>
           {/* Shadow Div Landing. */}
           <div className="flex flex-[55%] justify-center items-center">
             <div className="landing-desc h-auto">
@@ -60,7 +60,7 @@ export default function Home() {
             }}></Image>
           <div className="text-container flex flex-col justify-center">
             <h1 className="text-4xl pt-[3rem]">Abigail Agosta</h1>
-            <div className="opacity-[90%] my-[1.5rem]">
+            <div className="opacity-[90%] mt-[0.75rem] mb-[2rem]">
               <p className="">Abigail (Abbi) Agosta was an amazing young woman who struggled with OCD from a very young age.  Despite this, she was a kind and loyal friend, a high achiever academically, and a talented and fierce competitor on the soccer field. She began playing soccer at the age of 5 and went on to become a goalkeeper for top teams in the DA, GA, and ECNL soccer organizations.</p>
             </div>
             <hr className="mt-[1rem] mb-[1rem] mx-auto border-t-[0.5px] border-black "></hr>
