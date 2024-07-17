@@ -38,8 +38,8 @@ export default function Home() {
          
         </div>
       </main>
-      <section className="section-div flex lg:flex-row m-auto sm:flex-col">
-        <div className="flex justify-center w-full">
+      <section className="section-div flex m-auto">
+        <div className="section-container flex justify-center w-full">
           <Image
             src="/images/caption.jpg"
             alt="Caption Photo"
@@ -59,17 +59,17 @@ export default function Home() {
               boxShadow: '11px 11px 0px -4px #000000ce',
               borderRadius: '11px',
             }}></Image>
-          <div className="flex flex-col justify-center items-left h-full ml-[4rem]">
+          <div className="text-container flex flex-col justify-center h-full">
             <h1 className="text-4xl pt-[2rem]">Abigail Agosta</h1>
-            <div className="w-[30rem] opacity-[90%] my-[1.5rem]">
-              <p className="text-[1.1rem">Abigail (Abbi) Agosta was an amazing young woman who struggled with OCD from a very young age.  Despite this, she was a kind and loyal friend, a high achiever academically, and a talented and fierce competitor on the soccer field. She began playing soccer at the age of 5 and went on to become a goalkeeper for top teams in the DA, GA, and ECNL soccer organizations.</p>
+            <div className="opacity-[90%] my-[1.5rem]">
+              <p className="">Abigail (Abbi) Agosta was an amazing young woman who struggled with OCD from a very young age.  Despite this, she was a kind and loyal friend, a high achiever academically, and a talented and fierce competitor on the soccer field. She began playing soccer at the age of 5 and went on to become a goalkeeper for top teams in the DA, GA, and ECNL soccer organizations.</p>
             </div>
             <hr className="mt-[1rem] mb-[1rem] mx-auto border-t-[0.5px] border-black "></hr>
           </div>
         </div>
       </section>
       <section className="h-section flex flex-row m-auto bg-[#F5F5F5]">
-        <div className="flex justify-center w-full">
+        <div className="section-container flex justify-center w-full">
           <div className="flex flex-col justify-center items-left h-full mr-[4rem]">
             <div className="w-[27.5rem] opacity-[90%] my-[1.5rem]">
               <p className="text-[1.05rem] text-center pt-[2rem] w-[27.5rem]">Although the depth of her illness wasn&apos;t always evident, she struggled for many years with OCD, which in turn created high levels of anxiety and eventually depression. Her condition was not responsive to traditional therapies and treatments and became more debilitating and intrusive. Abbi faced every day with a relentless disease for as long as she could before her suffering ended at the age of 16 on March 5, 2024.</p>

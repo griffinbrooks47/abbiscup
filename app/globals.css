@@ -26,6 +26,18 @@
   .section-div {
     height: 85vh;
   }
+  .section-container {
+    flex-direction: column;
+  }
+  .text-container {
+    font-size: 0.9rem;
+    text-align: center;
+    width: 80%;
+    margin-inline: 10%;
+  }
+  .image-container {
+
+  }
 }
 
 /* Media query for anything larger than phones (min width 601px) */
@@ -43,5 +55,16 @@
   }
   .section-div {
     height: 65vh;
+  }
+  .section-container {
+    flex-direction: row;
+  }
+  .text-container {
+    font-size: 1.1rem;
+    margin-left: 4rem;
+    width: 30rem;
+  }
+  .image-container {
+    
   }
 }
