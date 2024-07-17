@@ -14,10 +14,14 @@
 @media only screen and (max-width: 600px) {
   /* Your CSS rules for phones go here */
   .nav-top {
-    height: 5rem;
+    height: 4.5rem;
   }
   .nav-bottom {
     height: 3rem;
+    font-size: 0.85rem;
+  }
+  .landing-title {
+    font-size: 2.75rem;
   }
   .landing-desc {
     width: 21rem;
@@ -36,7 +40,7 @@
     margin-inline: 10%;
   }
   .image-container {
-    width: 35%;
+    width: 40%;
     margin-inline: auto;
   }
 }
@@ -48,7 +52,11 @@
     height: 6rem;
   }
   .nav-bottom {
-    height: 3rem;
+    height: 3.5rem;
+    font-size: 1rem;
+  }
+  .landing-title {
+
   }
   .landing-desc {
     width: 27.5rem;

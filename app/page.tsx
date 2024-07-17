@@ -18,7 +18,9 @@ export default function Home() {
       >
         <div className="flex justify-center w-[100%] flex-col">
           <div className="flex flex-[45%] justify-center items-center text-[3.5rem] my-[0.25rem] tracking-[-1px]">
-            <h1 className={title.className}>Abbi&apos;s Cup</h1>
+            <h1 className={`${title.className} landing-title`}>
+              Abbi&apos;s Cup
+            </h1>
             <div className="w-[0.4rem]"></div>
             <IconTrophy color="black" fill="yellow" stroke={1.75} size={65}></IconTrophy>
           </div>

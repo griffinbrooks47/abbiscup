@@ -8,7 +8,7 @@ export function Navbar() {
     return (
         <>
             <div className="nav-top flex justify-center items-center bg-white">
-                <a className="flex justify-center items-center px-10 h-full w-[18rem]">
+                <a className="flex justify-center items-center px-10 h-[90%] w-[18rem]">
                 <Image
                     src="/logo-bw.png"
                     alt="Description of image"
@@ -19,6 +19,8 @@ export function Navbar() {
                         paddingRight: '0.4rem',
                         paddingTop: '0.25rem',
                         opacity: '100%',
+                        height: '100%',
+                        width: 'fit-content',
                     }}
                 />
                 </a>
@@ -42,7 +44,7 @@ export function Navbar() {
 
 function NavButton(props: {children: string, link?: string}) {
     return (
-        <button className=" h-full text-center mx-6 text-[1rem] opacity-[95%]">
+        <button className="h-full text-center mx-4 sm:mx-4 md:mx-6 lgmx-6 opacity-[95%]">
             {props.children}
         </button>
     )
