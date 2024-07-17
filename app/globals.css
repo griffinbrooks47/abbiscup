@@ -36,7 +36,8 @@
     margin-inline: 10%;
   }
   .image-container {
-
+    width: 12rem;
+    margin-inline: auto;
   }
 }
 

@@ -43,13 +43,10 @@ export default function Home() {
           <Image
             src="/images/caption.jpg"
             alt="Caption Photo"
-            height={500}
-            width={225}
+            height={1920}
+            width={1080}
+            className="image-container"
             style={{
-              height: '22.5rem',
-              width: 'auto',
-              marginTop: 'auto',
-              marginBottom: 'auto',
               borderWidth: '1.25px',
               borderColor: 'black',
               paddingBottom: '4',
@@ -59,8 +56,8 @@ export default function Home() {
               boxShadow: '11px 11px 0px -4px #000000ce',
               borderRadius: '11px',
             }}></Image>
-          <div className="text-container flex flex-col justify-center h-full">
-            <h1 className="text-4xl pt-[2rem]">Abigail Agosta</h1>
+          <div className="text-container flex flex-col justify-center">
+            <h1 className="text-4xl pt-[3rem]">Abigail Agosta</h1>
             <div className="opacity-[90%] my-[1.5rem]">
               <p className="">Abigail (Abbi) Agosta was an amazing young woman who struggled with OCD from a very young age.  Despite this, she was a kind and loyal friend, a high achiever academically, and a talented and fierce competitor on the soccer field. She began playing soccer at the age of 5 and went on to become a goalkeeper for top teams in the DA, GA, and ECNL soccer organizations.</p>
             </div>
