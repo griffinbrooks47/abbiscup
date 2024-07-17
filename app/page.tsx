@@ -65,9 +65,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="section-div flex flex-row m-auto bg-[#F5F5F5]">
+      <section className="section-div flex m-auto bg-[#F5F5F5]">
         <div className="section-container flex justify-center w-full">
-          <div className="flex flex-col justify-center items-left h-full mr-[4rem]">
+          <div className="text-container flex flex-col justify-center">
             <div className="opacity-[90%] my-[1.5rem]">
               <p className="text-center pt-[2rem]">Although the depth of her illness wasn&apos;t always evident, she struggled for many years with OCD, which in turn created high levels of anxiety and eventually depression. Her condition was not responsive to traditional therapies and treatments and became more debilitating and intrusive. Abbi faced every day with a relentless disease for as long as she could before her suffering ended at the age of 16 on March 5, 2024.</p>
             </div>
@@ -76,13 +76,10 @@ export default function Home() {
           <Image
             src="/images/portrait.jpg"
             alt="Caption Photo"
-            height={500}
-            width={200}
+            height={1920}
+            width={1080}
+            className="image-container"
             style={{
-              height: '20rem',
-              width: 'auto',
-              marginTop: 'auto',
-              marginBottom: 'auto',
               borderWidth: '1.25px',
               borderColor: 'black',
               paddingBottom: '4',
