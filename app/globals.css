@@ -36,7 +36,7 @@
     margin-inline: 10%;
   }
   .image-container {
-    width: 12rem;
+    width: 35%;
     margin-inline: auto;
   }
 }
@@ -66,6 +66,9 @@
     width: 30rem;
   }
   .image-container {
-    
+    width: fit-content;
+    height: 22rem;
+    margin-block: auto;
+    margin-inline: 4rem;
   }
 }

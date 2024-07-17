@@ -43,8 +43,8 @@ export default function Home() {
           <Image
             src="/images/caption.jpg"
             alt="Caption Photo"
-            height={1920}
-            width={1080}
+            height={723}
+            width={457}
             className="image-container"
             style={{
               borderWidth: '1.25px',
@@ -76,8 +76,8 @@ export default function Home() {
           <Image
             src="/images/portrait.jpg"
             alt="Caption Photo"
-            height={1920}
-            width={1080}
+            height={720}
+            width={543}
             className="image-container"
             style={{
               borderWidth: '1.25px',
