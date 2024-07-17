@@ -12,8 +12,8 @@ export function Navbar() {
                 <Image
                     src="/logo-bw.png"
                     alt="Description of image"
-                    width={1000} // specify the width of the image
-                    height={500} // specify the height of the image
+                    width={503} // specify the width of the image
+                    height={186} // specify the height of the image
                     priority
                     style={{
                         paddingRight: '0.4rem',
