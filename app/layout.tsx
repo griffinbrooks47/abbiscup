@@ -20,8 +20,11 @@ const inter = Inter({
 })
 
 export const metadata = {
-  title: 'My Mantine app',
+  title: `Abbi\'s Cup`,
   description: 'I have followed setup instructions carefully',
+  icons: {
+    icon: '/favicon.ico', // /public path
+  },
 };
 
 export default function RootLayout({

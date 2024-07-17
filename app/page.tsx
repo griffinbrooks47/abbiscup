@@ -37,7 +37,7 @@ export default function Home() {
          
         </div>
       </main>
-      <section className="h-section flex flex-row m-auto">
+      <section className="h-section flex lg:flex-row m-auto sm:flex-col">
         <div className="flex justify-center w-full">
           <Image
             src="/images/caption.jpg"
