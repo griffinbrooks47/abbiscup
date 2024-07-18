@@ -43,7 +43,12 @@
   .image-container {
     width: 40%;
     margin-inline: auto;
-    margin-top: 10%;
+    margin-top: 80%;
+  }
+
+
+  .event-card {
+    width: 80%;
   }
 }
 
@@ -80,5 +85,9 @@
     height: 22rem;
     margin-block: auto;
     margin-inline: 4rem;
+  }
+
+  .event-card {
+    width: 37.5rem;
   }
 }

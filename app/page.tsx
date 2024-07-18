@@ -1,4 +1,8 @@
+'use client'
+
 import Image from "next/image";
+
+import localFont from "next/font/local";
 
 import { Inter, Kalam } from 'next/font/google';
 
@@ -7,17 +11,23 @@ const title = Inter({
   subsets: ['latin'],
 })
 
-import { IconTrophy } from '@tabler/icons-react';
+import { IconTrophy, IconArrowBigRight } from '@tabler/icons-react';
 import { ReactNode } from "react";
 
+import { useRouter } from "next/navigation";
+
+import { Button } from "@mantine/core";
+
 export default function Home() {
+
+  const router = useRouter();
 
   return (
     <>
       <main className="h-vp-nav flex flex-col justify-center items-center bg-[#F5F5F5]"
       >
         <div className="flex justify-center w-[100%] flex-col">
-          <div className="flex flex-[45%] justify-center items-center my-[0.25rem] tracking-[-1px]">
+          <div className="flex flex-[45%] justify-center items-center my-[0rem] tracking-[-1px]">
             <h1 className={`${title.className} landing-title`}>
               Abbi&apos;s Cup
             </h1>
@@ -35,6 +45,13 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <Button style={{ marginTop: "1.65rem", fontSize: "1.15rem", marginInline: "auto", border: "1.5px solid black", borderRadius: '11px', boxShadow: "7px 8px 0px -4px #000000ce" }}
+            color="rgba(107, 184, 105, 1)" 
+            w="fit-content" 
+            rightSection={<IconArrowBigRight />} 
+            justify="center"
+            onClick={() => router.push("/events")}
+            h="4.5rem">Schedule</Button>
         </div>
         <div className="h-[8rem]">
          
@@ -101,7 +118,7 @@ export default function Home() {
 
 function ShadowCard(props: {children: ReactNode}) {
   return (
-    <div className="border-[1.25px] border-black shadow-div bg-white pl-[1.75rem] md:pl-[2.25rem] pr-[1.35rem] py-[1.5rem] flex justify-center items-center rounded-md">
+    <div className="border-[1.25px] border-black shadow-div bg-white pl-[1.75rem] md:pl-[2.25rem] pr-[1.35rem] py-[1.5rem] flex justify-center items-center rounded-md flex-col">
       {props.children}
     </div>
   )

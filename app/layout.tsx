@@ -8,6 +8,7 @@ import { Navbar } from '@/components/nav';
 import "./globals.css";
 
 import { Jost, Lato, Asap_Condensed, Inter } from 'next/font/google';
+import localFont from 'next/font/local';
 
 const globalFont = Asap_Condensed({
   weight: '500',
