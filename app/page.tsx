@@ -28,13 +28,13 @@ export default function Home() {
       >
         <div className="flex justify-center w-[100%] flex-col">
           <div className="flex flex-[45%] justify-center items-center my-[0rem] tracking-[-1px]">
-            <h1 className={`${title.className} landing-title`}>
+            <h1 className={`${title.className} landing-title my-[0]`}>
               Abbi&apos;s Cup
             </h1>
             <div className="w-[0.4rem]"></div>
             <IconTrophy color="black" fill="yellow" stroke={1.75} size={65}></IconTrophy>
           </div>
-          <hr className="mt-[0.2rem] mb-[1rem] md:w-[23rem] w-[60%] mx-auto border-t-[0.5px] border-black"></hr>
+          <hr className="mt-[0rem] mb-[1rem] md:w-[23rem] w-[60%] mx-auto border-t-[0.5px] border-black"></hr>
           {/* Shadow Div Landing. */}
           <div className="flex flex-[55%] justify-center items-center">
             <div className="landing-desc h-auto">

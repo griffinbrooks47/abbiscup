@@ -14,7 +14,7 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       height: {
-        'vp-nav': 'calc(100vh - 12rem)',
+        'vp-nav': 'calc(100vh - 13rem)',
         'vp-full': 'calc(100vh - 9rem)',
         'section': '65vh',
         'section-mobile': '90vh',

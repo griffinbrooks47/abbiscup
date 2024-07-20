@@ -52,7 +52,7 @@ export function Navbar() {
 
 function NavButton(props: {children: string, link?: string, onClick: () => void}) {
     return (
-        <button className="h-full text-center mx-[0.85rem] md:mx-6 lgmx-6 opacity-[95%]"
+        <button className="h-full text-center font-semibold mx-[0.95rem] md:mx-6 lg:mx-6 opacity-[95%]"
             onClick={() => props.onClick()}
         >
             {props.children}
