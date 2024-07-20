@@ -18,6 +18,7 @@ const config: Config = {
         'vp-full': 'calc(100vh - 9rem)',
         'section': '55vh',
         'section-mobile': '60vh',
+        'section-resource': '40vh',
       }
     },
   },

@@ -16,7 +16,9 @@ import { ReactNode } from "react";
 
 import { useRouter } from "next/navigation";
 
-import { Button } from "@mantine/core";
+import { Button, Title } from "@mantine/core";
+
+import { Resources } from "@/components/resources";
 
 export default function Home() {
 
@@ -88,7 +90,7 @@ export default function Home() {
         <div className="section-container flex justify-center items-center w-full">
           <div className="text-container flex flex-col justify-center items-center">
             <div className="opacity-[90%] mb-[1.5rem]">
-              <p className="pt-[0] md:pt-[7.5rem]">Although the depth of her illness wasn&apos;t always evident, she struggled for many years with OCD, which in turn created high levels of anxiety and eventually depression. Her condition was not responsive to traditional therapies and treatments and became more debilitating and intrusive. Abbi faced every day with a relentless disease for as long as she could before her suffering ended at the age of 16 on March 5, 2024.</p>
+              <p className="pt-[0] md:pt-[3rem]">Although the depth of her illness wasn&apos;t always evident, she struggled for many years with OCD, which in turn created high levels of anxiety and eventually depression. Her condition was not responsive to traditional therapies and treatments and became more debilitating and intrusive. Abbi faced every day with a relentless disease for as long as she could before her suffering ended at the age of 16 on March 5, 2024.</p>
             </div>
             <hr className="w-[100%] mb-[1.5rem] border-t-[0.5px] border-[rgba(0,0,0,0.2)]"></hr>
           </div>
@@ -107,12 +109,11 @@ export default function Home() {
               alignItems: 'center',
               boxShadow: '11px 11px 0px -4px #000000ce',
               borderRadius: '11px',
-              marginBottom: '2rem',
             }}>
           </Image>
         </div>
       </section>
-      
+      <Resources />
     </>
   );
 }
