@@ -17,7 +17,7 @@ const config: Config = {
         'vp-nav': 'calc(100vh - 15rem)',
         'vp-full': 'calc(100vh - 9rem)',
         'section': '55vh',
-        'section-mobile': '80vh',
+        'section-mobile': '60vh',
       }
     },
   },
