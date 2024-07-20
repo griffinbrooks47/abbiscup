@@ -16,8 +16,8 @@ const config: Config = {
       height: {
         'vp-nav': 'calc(100vh - 15rem)',
         'vp-full': 'calc(100vh - 9rem)',
-        'section': '65vh',
-        'section-mobile': '90vh',
+        'section': '55vh',
+        'section-mobile': '80vh',
       }
     },
   },
