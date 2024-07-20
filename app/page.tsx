@@ -53,7 +53,7 @@ export default function Home() {
             onClick={() => router.push("/events")}
             h="4.5rem">Schedule</Button>
         </div>
-        <div className="h-[8rem]">
+        <div className="h-[6rem]">
          
         </div>
       </main>
@@ -77,7 +77,7 @@ export default function Home() {
             }}></Image>
           <div className="text-container flex flex-col justify-center">
             <h1 className="text-4xl pt-[3rem]">Abigail Agosta</h1>
-            <hr className="w-[70%] mt-[0.75rem] mx-auto border-t-[0.5px] border-[rgba(0,0,0,0.35)]"></hr>
+            <hr className="w-[60%] mt-[0.75rem] border-t-[0.5px] border-[rgba(0,0,0,0.35)]"></hr>
             <div className="opacity-[90%] mt-[0.75rem] mb-[2rem]">
               <p className="">Abigail (Abbi) Agosta was an amazing young woman who struggled with OCD from a very young age.  Despite this, she was a kind and loyal friend, a high achiever academically, and a talented and fierce competitor on the soccer field. She began playing soccer at the age of 5 and went on to become a goalkeeper for top teams in the DA, GA, and ECNL soccer organizations.</p>
             </div>
@@ -88,7 +88,7 @@ export default function Home() {
         <div className="section-container flex justify-center w-full">
           <div className="text-container flex flex-col justify-center">
             <div className="opacity-[90%] my-[1.5rem]">
-              <p className="text-center pt-[2rem]">Although the depth of her illness wasn&apos;t always evident, she struggled for many years with OCD, which in turn created high levels of anxiety and eventually depression. Her condition was not responsive to traditional therapies and treatments and became more debilitating and intrusive. Abbi faced every day with a relentless disease for as long as she could before her suffering ended at the age of 16 on March 5, 2024.</p>
+              <p className="pt-[2rem]">Although the depth of her illness wasn&apos;t always evident, she struggled for many years with OCD, which in turn created high levels of anxiety and eventually depression. Her condition was not responsive to traditional therapies and treatments and became more debilitating and intrusive. Abbi faced every day with a relentless disease for as long as she could before her suffering ended at the age of 16 on March 5, 2024.</p>
             </div>
             <hr className="mt-[1rem] mb-[1rem] mx-auto border-t-[0.5px] border-black "></hr>
           </div>
