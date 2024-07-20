@@ -56,10 +56,10 @@
 @media only screen and (min-width: 601px) {
   /* Your CSS rules for larger screens go here */
   .nav-top {
-    height: 6rem;
+    height: 5.5rem;
   }
   .nav-bottom {
-    height: 3.5rem;
+    height: 3.25rem;
     font-size: 1rem;
   }
   .landing-title {
