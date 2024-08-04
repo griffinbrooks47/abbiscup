@@ -6,6 +6,10 @@
   @tailwind base;
 }
 
+body {
+  background-color: aquamarine;
+}
+
 .shadow-div {
   box-shadow: 11px 11px 0px -4px #000000ce;
   border-radius: 11px;
@@ -13,12 +17,24 @@
 /* Media query for phones (max width 600px) */
 @media only screen and (max-width: 600px) {
   /* Your CSS rules for phones go here */
-  .nav-top {
-    height: 4.5rem;
+
+  .section-border-top {
+    border-top-left-radius: 90% 10%;
+    border-top-right-radius: 90% 10%;
   }
-  .nav-bottom {
+
+  .section-border-bottom {
+    border-bottom-left-radius: 90% 10%;
+    border-bottom-right-radius: 90% 10%;
+  }
+
+  .nav {
     height: 3rem;
-    font-size: 0.85rem;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+  }
+  .header {
+    height: 5rem;
   }
   .landing-title {
     font-size: 2.4rem;
@@ -73,12 +89,25 @@
 /* Media query for anything larger than phones (min width 601px) */
 @media only screen and (min-width: 601px) {
   /* Your CSS rules for larger screens go here */
-  .nav-top {
-    height: 5.5rem;
+
+  .section-border-top {
+    border-top-left-radius: 50% 15%;
+    border-top-right-radius: 50% 15%;
   }
-  .nav-bottom {
+
+  .section-border-bottom {
+    border-bottom-left-radius: 50% 10%;
+    border-bottom-right-radius: 50% 10%;
+  }
+
+  .nav {
     height: 3.25rem;
-    font-size: 1rem;
+    font-size: 1.05rem;
+
+    margin-block: 0.5rem;
+  }
+  .header {
+    height: 5.75rem;
   }
   .landing-title {
     font-size: 3rem;
