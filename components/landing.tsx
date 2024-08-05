@@ -45,14 +45,14 @@ export function Landing() {
                 </div>
                 </div>
                 <Button style={{ marginTop: "1.65rem", fontSize: "1.15rem", marginInline: "auto", border: "1.5px solid black", borderRadius: '11px', boxShadow: "7px 8px 0px -4px #000000ce" }}
-                    color="rgba(107, 184, 105, 1)" 
+                    color="#2DADB4" 
                     w="fit-content" 
                     rightSection={<IconArrowBigRight />} 
                     justify="center"
                     onClick={() => router.push("/events")}
                     h="3rem">Schedule</Button>
             </div>
-            <div className="h-[1rem]">
+            <div className="h-[3rem]">
             
             </div>
         </main>

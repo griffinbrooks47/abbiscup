@@ -19,6 +19,9 @@ const config: Config = {
         'section': '55vh',
         'section-mobile': '60vh',
         'section-resource': '40vh',
+      },
+      backgroundColor: {
+        'blue-gradient': 'linear-gradient(90deg, rgba(179,228,250,1) 0%, rgba(121,209,246,1) 100%);'
       }
     },
   },

@@ -40,7 +40,7 @@ export default function Home() {
               As awkward as it may feel, we can ALL show up for our friends and family who might be struggling. These conversations are not easy and as stated earlier, whether it is you or someone else you care about that is struggling, it takes courage to speak up and to engage. Some great suggestions can be found on the webpage called Seize The Awkward, along with some stories of those who have helped, and been helped.
             </div>
             <Button style={{ marginTop: "1.65rem", fontSize: "1.15rem", marginInline: "auto", border: "1.5px solid black", borderRadius: '11px', boxShadow: "7px 8px 0px -4px #000000ce" }}
-              color="rgba(107, 184, 105, 1)" 
+              color="#2DADB4" 
               w="fit-content" 
               rightSection={<IconArrowBigRight />} 
               justify="center"

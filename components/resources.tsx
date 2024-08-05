@@ -5,7 +5,7 @@ import { ReactNode } from "react"
 export const Resources = () => {
     return (
         <>
-            <section className="section-border resources-big flex justify-center items-center flex-col bg-white my-[2rem]">
+            <section className="resources-big section-border-top bg-white flex justify-center items-center flex-col -mt-[1.5rem]">
                 <div className="resource-grid">
                     <div className="flex justify-center flex-col ml-[3rem] mt-[4rem]" style={{ gridColumn: "span 2"}}>
                         <Title style={{ marginInline: "auto", fontSize: '2.5rem' }}>What can we do?</Title>
