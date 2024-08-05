@@ -1,15 +1,17 @@
 import Image from "next/image"
 
+import { Collapse } from "@mantine/core"
+
 export function About() {
     return (
         <main className="section-border-top -mb-[9rem] blue-gradient relative z-[1] pt-[4rem] pb-[10rem]">
-            <section className="section-div flex m-auto">
+            <section className="section-div flex m-auto mt-[2rem]">
                 <div className="section-container flex justify-center w-full">
                     <Image
-                        src="/images/caption.jpg"
+                        src="/images/AbbiNew1.jpeg"
                         alt="Caption Photo"
-                        height={723}
-                        width={457}
+                        height={830}
+                        width={620}
                         className="image-container"
                         style={{
                             borderWidth: '1.25px',
@@ -38,10 +40,10 @@ export function About() {
                         <hr className="w-[100%] mb-[1.5rem] border-t-[0.5px] border-[rgba(0,0,0,0.2)]"></hr>
                     </div>
                     <Image
-                        src="/images/portrait.jpg"
+                        src="/images/AbbiNew2.png"
                         alt="Caption Photo"
-                        height={720}
-                        width={543}
+                        height={830}
+                        width={650}
                         className="image-container"
                         style={{
                             borderWidth: '1.25px',

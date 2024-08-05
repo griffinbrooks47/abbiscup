@@ -51,7 +51,7 @@ background: linear-gradient(180deg, rgba(179,228,250,0.3968181022408963) 0%, rgb
     line-height: 1.65rem;
   }
   .section-div {
-    height: 85vh;
+    height: 70vh;
   }
   .section-container {
     flex-direction: column;
