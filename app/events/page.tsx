@@ -1,5 +1,5 @@
 
-import { Button, Paper, Title } from "@mantine/core"
+import { Button, Paper, Title, Divider } from "@mantine/core"
 import { IconArrowBigRight } from "@tabler/icons-react"
 import { ReactNode } from "react"
 
@@ -13,15 +13,12 @@ export default function Events() {
                 <ShadowCard>
                     <div className="text-[1.05rem] flex justify-left flex-col w-full">
                         <div>
-                            <Title style={{ fontSize: '1.75rem', textAlign: 'center' }}>Abbi&apos;s Cup</Title>
-                            <div style={{ textAlign: "center" }}>Albion FC</div>
+                            <Title style={{ fontSize: '1.75rem', textAlign: 'center', marginBottom: '0.2rem', textDecoration: 'underline' }}>Abbi&apos;s Cup</Title>
+                            <div style={{ fontSize: '1.2rem', textAlign: 'center', fontWeight: 'bold', marginBottom: '0.1rem' }}>August 10th, 2024</div>
                         </div>
-                        <div style={{ marginBlock: '1rem' }}>
-                            <div style={{ textAlign: 'left'}}>When:</div>
-                            <div style={{ textAlign: 'left', fontWeight: 'bold' }}>August 10th, 2024</div>
-                        </div>
+                        <Divider className="my-[0.5rem]"></Divider>
                         <div className="flex flex-col">
-                            <div>Where:</div>
+                            <div className="font-bold mt-[0.5rem]">Location:</div>
                             <a style={{ fontWeight: 'semi-bold' }}
                                 href="https://www.google.com/maps/place/19008+Saums+Rd,+Houston,+TX+77084"
                                 target="_blank"
@@ -31,19 +28,20 @@ export default function Events() {
                             <div style={{ fontWeight: 'semi-bold' }}>
                                 19008 Saums Rd, Houston, TX 77084
                             </div>
+                            <Button style={{ fontSize: "1.15rem", marginRight: "auto",marginBlock: "0.75rem", border: "1.5px solid black", borderRadius: '11px', boxShadow: "7px 8px 0px -4px #000000ce", opacity: "100%"}}
+                                color="#4169E1" 
+                                w="fit-content" 
+                                rightSection={<IconArrowBigRight />} 
+                                justify="right"
+                                h="2.5rem"><a
+                                href="https://www.google.com/maps/place/19008+Saums+Rd,+Houston,+TX+77084"
+                                target="_blank"
+                                >Directions</a></Button>
                         </div>
+                        <Divider className="my-[0.5rem]"></Divider>
                     </div>
                 </ShadowCard>
             </Paper>
-            <Button style={{ fontSize: "1.15rem", marginInline: "auto", border: "1.5px solid black", borderRadius: '11px', boxShadow: "7px 8px 0px -4px #000000ce", opacity: "100%"}}
-                    color="#4169E1" 
-                    w="fit-content" 
-                    rightSection={<IconArrowBigRight />} 
-                    justify="center"
-                    h="3rem"><a
-                    href="https://www.google.com/maps/place/19008+Saums+Rd,+Houston,+TX+77084"
-                    target="_blank"
-                    >Directions</a></Button>
         </main>
     )
 }
