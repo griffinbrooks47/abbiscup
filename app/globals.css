@@ -70,7 +70,6 @@ background: linear-gradient(180deg, rgba(179,228,250,0.3968181022408963) 0%, rgb
 
   .event-card {
     width: 90%;
-    margin-bottom: 10rem;
   }
 
   .resource-grid {
@@ -142,7 +141,6 @@ background: linear-gradient(180deg, rgba(179,228,250,0.3968181022408963) 0%, rgb
 
   .event-card {
     width: 30rem;
-    margin-bottom: 10rem;
   }
 
   .resource-grid {

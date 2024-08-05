@@ -6,10 +6,10 @@ import { ReactNode } from "react"
 export default function Events() {
     return (
         <main
-            className="blue-gradient h-[100vh] flex flex-col justify-center items-center"
+            className="blue-gradient h-[100vh] flex flex-col justify-left items-center"
         >
-            <Title style={{ marginBlock: '1rem', textAlign: 'left' }}>Schedule</Title>
-            <Paper shadow="sm" radius="md" withBorder className="event-card">
+            <Title style={{ marginTop: '5rem', marginBottom: '1rem', textAlign: 'left' }}>Schedule</Title>
+            <Paper shadow="sm" radius="md" withBorder className="event-card mb-[1.5rem]">
                 <ShadowCard>
                     <div className="text-[1.05rem] flex justify-left flex-col w-full">
                         <div>
@@ -32,21 +32,18 @@ export default function Events() {
                                 19008 Saums Rd, Houston, TX 77084
                             </div>
                         </div>
-                        <Button
-                            style={{ marginTop: "1.25rem", fontSize: "1.15rem", border: "1.5px solid black", marginLeft: "auto" }}
-                            w="fit-content" 
-                            rightSection={<IconArrowBigRight />} 
-                            justify="center"
-    
-                        >
-                            <a
-                                href="https://www.google.com/maps/search/?api=1&query=3601+Campbell+Road,+Houston,+TX"
-                                target="_blank"
-                            >Directions</a>
-                        </Button>
                     </div>
                 </ShadowCard>
             </Paper>
+            <Button style={{ fontSize: "1.15rem", marginInline: "auto", border: "1.5px solid black", borderRadius: '11px', boxShadow: "7px 8px 0px -4px #000000ce", opacity: "100%"}}
+                    color="#4169E1" 
+                    w="fit-content" 
+                    rightSection={<IconArrowBigRight />} 
+                    justify="center"
+                    h="3rem"><a
+                    href="https://www.google.com/maps/place/19008+Saums+Rd,+Houston,+TX+77084"
+                    target="_blank"
+                    >Directions</a></Button>
         </main>
     )
 }
