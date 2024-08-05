@@ -8,7 +8,7 @@ export default function Events() {
         <main
             className="blue-gradient h-[100vh] flex flex-col justify-left items-center"
         >
-            <Title style={{ marginTop: '5rem', marginBottom: '1rem', textAlign: 'left' }}>Schedule</Title>
+            <Title style={{ marginTop: '2rem', marginBottom: '1rem', textAlign: 'left' }}>Schedule</Title>
             <Paper shadow="sm" radius="md" withBorder className="event-card mb-[1.5rem]">
                 <ShadowCard>
                     <div className="text-[1.05rem] flex justify-left flex-col w-full">
@@ -39,10 +39,53 @@ export default function Events() {
                                 >Directions</a></Button>
                         </div>
                         <Divider className="my-[0.5rem]"></Divider>
+                        <div className="mb-[0.5rem]">
+                            <div className="font-bold mt-[0.5rem] mb-[0.5rem]">Agenda:</div>
+                            <ScheduleItem 
+                                time="7:30 am"
+                                title="Arrival Time"
+                            />
+                            <ScheduleItem 
+                                time="7:45 am"
+                                title="Talk"
+                            />
+                            <ScheduleItem 
+                                time="8:30 am"
+                                title="Session 1"
+                                details={['Field 7: HTX v AHFC 07', 'Field 8: Rise v AHFC 08']}
+                            />
+                            <ScheduleItem 
+                                time="9:30 am"
+                                title="Session 2"
+                                details={['Field 7: HTX v AHFC 08', 'Field 8: Rise v AHFC 07']}
+                            />
+                        </div>
                     </div>
                 </ShadowCard>
             </Paper>
         </main>
+    )
+}
+
+function ScheduleItem(props: {time: string, title: string, details?: string[]}) {
+    return (
+        <section className="my-[0.15rem]">
+            <div className="flex">
+                <div className="mr-[0.5rem] font-bold">
+                    {props.time}
+                </div>    
+                <p>:</p>
+                <div className="mx-[0.5rem]">
+                    {props.title}
+                </div>        
+            </div>
+            <div className="">
+                {props.details?.map((detail, index) => (
+                    <div key={index} className="mx-[1.5rem]">{detail}</div>
+                ))}
+            </div>
+            <Divider className="mt-[0.15rem]"></Divider>
+        </section>
     )
 }
 
