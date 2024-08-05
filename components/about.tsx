@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export function About() {
     return (
-        <main className="section-border-top blue-gradient relative z-[1] py-[4rem]">
+        <main className="section-border-top -mb-[9rem] blue-gradient relative z-[1] pt-[4rem] pb-[10rem]">
             <section className="section-div flex m-auto">
                 <div className="section-container flex justify-center w-full">
                     <Image

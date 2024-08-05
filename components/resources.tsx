@@ -5,7 +5,7 @@ import { ReactNode } from "react"
 export const Resources = () => {
     return (
         <>
-            <section className="resources-big section-border-top bg-white flex justify-center items-center flex-col -mt-[1.5rem]">
+            <section className="resources-big section-border-top relative bg-white flex justify-center items-center flex-col -mt-[1.5rem] z-[5] pt-[3rem]">
                 <div className="resource-grid">
                     <div className="flex justify-center flex-col ml-[3rem] mt-[4rem]" style={{ gridColumn: "span 2"}}>
                         <Title style={{ marginInline: "auto", fontSize: '2.5rem' }}>What can we do?</Title>
@@ -43,7 +43,7 @@ export const Resources = () => {
                     </div>
                 </div>
             </section>
-            <section className="resources-small flex justify-center items-center flex-col">
+            <section className="resources-small bg-white section-border-top relative z-[100] flex justify-center items-center flex-col z-[5] pt-[2rem]">
                 <div className="mt-[4rem]">
                     <Title className="">What can we do?</Title>
                 </div>
