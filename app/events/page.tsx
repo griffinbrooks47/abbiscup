@@ -6,7 +6,7 @@ import { ReactNode } from "react"
 export default function Events() {
     return (
         <main
-            className="bg-[#F5F5F5] h-vp-full flex flex-col justify-center items-center"
+            className="blue-gradient h-[100vh] flex flex-col justify-center items-center"
         >
             <Title style={{ marginBlock: '1rem', textAlign: 'left' }}>Schedule</Title>
             <Paper shadow="sm" radius="md" withBorder className="event-card">
@@ -23,13 +23,13 @@ export default function Events() {
                         <div className="flex flex-col">
                             <div>Where:</div>
                             <a style={{ fontWeight: 'semi-bold' }}
-                                href="https://www.google.com/maps/search/?api=1&query=3601+Campbell+Road,+Houston,+TX"
+                                href="https://www.google.com/maps/place/19008+Saums+Rd,+Houston,+TX+77084"
                                 target="_blank"
                             >
-                                Campbell Road Sports Park
+                                Cullen Park
                             </a>
                             <div style={{ fontWeight: 'semi-bold' }}>
-                                3601 Campbell Road, Houston, TX.
+                                19008 Saums Rd, Houston, TX 77084
                             </div>
                         </div>
                         <Button
