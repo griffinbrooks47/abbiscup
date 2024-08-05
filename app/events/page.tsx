@@ -41,6 +41,7 @@ export default function Events() {
                         <Divider className="my-[0.5rem]"></Divider>
                         <div className="mb-[0.5rem]">
                             <div className="font-bold mt-[0.5rem] mb-[0.5rem]">Agenda:</div>
+                            <Divider></Divider>
                             <ScheduleItem 
                                 time="7:30 am"
                                 title="Arrival Time"
