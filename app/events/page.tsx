@@ -8,8 +8,7 @@ export default function Events() {
         <main
             className="blue-gradient h-[100vh] flex flex-col justify-left items-center"
         >
-            <Title style={{ marginTop: '2rem', marginBottom: '1rem', textAlign: 'left' }}>Schedule</Title>
-            <Paper shadow="sm" radius="md" withBorder className="event-card mb-[1.5rem]">
+            <Paper shadow="sm" radius="md" withBorder className="event-card mb-[1.5rem] mt-[2rem]">
                 <ShadowCard>
                     <div className="text-[1.05rem] flex justify-left flex-col w-full">
                         <div>
