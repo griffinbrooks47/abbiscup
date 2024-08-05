@@ -48,7 +48,7 @@ export default function Events() {
                             />
                             <ScheduleItem 
                                 time="7:45 am"
-                                title="Talk"
+                                title="Presentation"
                             />
                             <ScheduleItem 
                                 time="8:30 am"
