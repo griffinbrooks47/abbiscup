@@ -21,12 +21,12 @@ export function Landing() {
                     <Image
                         src="/images/AbbisCupLogo.png"
                         alt="Description of image"
-                        width={503} // specify the width of the image
-                        height={186} // specify the height of the image
+                        width={1042} // specify the width of the image
+                        height={207} // specify the height of the image
                         priority
                         style={{
                             paddingRight: "5px",
-                            opacity: '100%',
+                            opacity: '90%',
                             width: 'fit-content',
                             height: '90%'
                         }}
@@ -44,7 +44,7 @@ export function Landing() {
                     </div>
                 </div>
                 </div>
-                <Button style={{ marginTop: "1.65rem", fontSize: "1.15rem", marginInline: "auto", border: "1.5px solid black", borderRadius: '11px', boxShadow: "7px 8px 0px -4px #000000ce", opacity: "90%"}}
+                <Button style={{ marginTop: "1.65rem", fontSize: "1.15rem", marginInline: "auto", border: "1.5px solid black", borderRadius: '11px', boxShadow: "7px 8px 0px -4px #000000ce", opacity: "100%"}}
                     color="#4169E1" 
                     w="fit-content" 
                     rightSection={<IconArrowBigRight />} 
