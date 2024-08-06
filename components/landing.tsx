@@ -19,13 +19,13 @@ export function Landing() {
                     onClick={() => router.push('/')}
                 >
                     <Image
-                        src="/images/AbbisCupLogo.png"
+                        src="/images/logofull.png"
                         alt="Description of image"
-                        width={1042} // specify the width of the image
-                        height={207} // specify the height of the image
+                        width={1010} // specify the width of the image
+                        height={160} // specify the height of the image
                         priority
                         style={{
-                            paddingRight: "5px",
+                            paddingRight: "0px",
                             opacity: '90%',
                             width: 'fit-content',
                             height: '90%'
