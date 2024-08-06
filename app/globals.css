@@ -40,7 +40,7 @@ background: linear-gradient(180deg, rgba(179,228,250,0.3968181022408963) 0%, rgb
     margin-top: 0.5rem;
   }
   .header {
-    height: 3.5rem;
+    height: 3.75rem;
   }
   .landing-title {
     font-size: 2.4rem;
@@ -51,7 +51,7 @@ background: linear-gradient(180deg, rgba(179,228,250,0.3968181022408963) 0%, rgb
     line-height: 1.65rem;
   }
   .section-div {
-    height: 70vh;
+    margin-bottom: 1rem;
   }
   .section-container {
     flex-direction: column;
@@ -122,7 +122,7 @@ background: linear-gradient(180deg, rgba(179,228,250,0.3968181022408963) 0%, rgb
     font-size: 1.4rem;
   }
   .section-div {
-    height: 65vh;
+    margin-bottom: 5rem;
   }
   .section-container {
     flex-direction: row;
