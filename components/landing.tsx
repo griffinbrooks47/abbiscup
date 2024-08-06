@@ -14,7 +14,7 @@ export function Landing() {
         <main className="h-vp-nav flex flex-col -mb-[1rem] justify-center items-center bg-white"
         >
             <div className="header mb-[1.25rem] flex justify-center items-center bg-white">
-                <a className="flex justify-center items-center px-10 h-[100%]"
+                <a className="flex justify-center items-center h-[100%]"
                     style={{ cursor: "pointer" }}
                     onClick={() => router.push('/')}
                 >
