@@ -28,7 +28,7 @@ export function Landing() {
                             paddingRight: "0px",
                             opacity: '90%',
                             width: 'fit-content',
-                            height: '100%'
+                            height: '90%'
                         }}
                     />
                 </a>
