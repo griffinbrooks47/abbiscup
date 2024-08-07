@@ -21,6 +21,7 @@ import { Button, Title } from "@mantine/core";
 import { Resources } from "@/components/resources";
 import { Landing } from "@/components/landing";
 import { About } from "@/components/about";
+import { JaneCambell } from "@/components/janecambell";
 
 export default function Home() {
 
@@ -34,6 +35,7 @@ export default function Home() {
       <main className="content-div">
         <Landing />
         <About />
+        <JaneCambell />
         <Resources />
         <section className="flex m-auto bg-[#F5F5F5] flex-col pb-[10rem]">
             <div className="mx-auto mt-[5rem] text-[0.85rem] md:text-[1.05rem] w-[85%] md:w-[30rem] text-center">

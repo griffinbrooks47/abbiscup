@@ -22,7 +22,7 @@ export function Navbar() {
                     Events
                 </NavButton>
                 <NavButton onClick={() => router.push("/")}>
-                    Resources
+                    Links
                 </NavButton>
             </nav>
         </>

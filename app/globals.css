@@ -124,9 +124,6 @@ background: linear-gradient(180deg, rgba(179,228,250,0.3968181022408963) 0%, rgb
   .section-div {
     margin-bottom: 5rem;
   }
-  .section-container {
-    flex-direction: row;
-  }
   .text-container {
     font-size: 1.05rem;
     margin-left: 2rem;
