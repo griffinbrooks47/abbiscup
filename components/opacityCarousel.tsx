@@ -35,7 +35,7 @@ const EmblaCarousel = () => {
   const slides = Array.from(Array(SLIDE_COUNT).keys())
 
   const [emblaRef, emblaApi] = useEmblaCarousel(options)
-
+  
   const tweenFactor = useRef(0)
 
   const setTweenFactor = useCallback((emblaApi: EmblaCarouselType) => {
