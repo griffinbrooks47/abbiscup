@@ -12,7 +12,7 @@ export function JaneCambell() {
     return (
         <main className="section-border-top bg-white flex flex-col justify-center items-center -mb-[9rem] relative z-[5] pt-[7.5rem] pb-[15rem]">
             <Title size="h1" className="header">One Olympian's Memory of Abbi</Title>
-            <section className="flex items-center justify-center mt-[3rem] mb-[5rem] flex-col md:flex-row">
+            <section className="flex items-center justify-center mb-[5rem] flex-col md:flex-row">
                 <div className="w-[20rem] h-[20rem] profile" style={{ overflow: 'hidden', position: 'relative', borderRadius: '100%' }}>
                     <Image
                         src="/images/JaneCambell/profile.jpg"
