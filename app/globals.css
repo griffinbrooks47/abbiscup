@@ -89,6 +89,11 @@ background: linear-gradient(180deg, rgba(179,228,250,0.3968181022408963) 0%, rgb
   .resources-small {
     display: flex;
   }
+
+
+  .donation-container {
+    width: 85%;
+  }
 }
 
 /* Media query for anything larger than phones (min width 601px) */
@@ -155,5 +160,9 @@ background: linear-gradient(180deg, rgba(179,228,250,0.3968181022408963) 0%, rgb
   }
   .resources-small {
     display: none;
+  }
+
+  .donation-container {
+    width: 35rem;
   }
 }

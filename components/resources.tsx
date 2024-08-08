@@ -84,7 +84,7 @@ export const Resources = () => {
             {/* Donation Section. */}
             <section className="mt-[2rem]">
                 <Card>
-                    <div className="w-[32.5rem] text-center">
+                    <div className="donation-container w-[32.5rem] text-center">
                         In addition to being ambassadors for your own and other's mental health, we have launched a fundraiser to support research through the International OCD Foundation. 100% of your donation will go toward research to help understand and improve treatments for teens with OCD. To make a donation please go to:
                     </div>
                 </Card>
