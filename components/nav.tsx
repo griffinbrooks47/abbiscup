@@ -6,6 +6,8 @@ import Image from "next/image"
 
 import { useRouter } from "next/navigation"
 
+import { Element, scroller } from 'react-scroll';
+
 export function Navbar() {
 
     const router = useRouter();
