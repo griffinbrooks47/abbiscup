@@ -92,7 +92,8 @@ background: linear-gradient(180deg, rgba(179,228,250,0.3968181022408963) 0%, rgb
 
 
   .donation-container {
-    width: 85%;
+    width: 90%;
+    margin-inline: auto;
   }
 }
 
