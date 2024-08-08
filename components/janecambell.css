@@ -1,10 +1,10 @@
 
 @media only screen and (max-width: 600px) {
-    .header {
-        font-size: 2rem;
+    .header-jc {
+        font-size: 1.85rem;
         text-align: center;
-        width: 80%;
-        margin-bottom: 3rem;
+        width: 50%;
+        margin-bottom: 2rem;
     }
     .profile {
         margin-bottom: 1rem;
@@ -25,8 +25,8 @@
 }
 
 @media only screen and (min-width: 601px) {
-    .header {
-        margin-bottom: 1rem;
+    .header-jc {
+        margin-bottom: 3rem;
     }
     .profile {
         margin-right: 2rem;
