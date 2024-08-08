@@ -1,17 +1,16 @@
-import { Title } from "@mantine/core"
+import { Divider, Title, Card } from "@mantine/core"
 import { ReactNode } from "react"
 
 
 export const Resources = () => {
     return (
-        <>
-            <section className="resources-big blue-gradient section-border-top relative bg-white flex justify-center items-center flex-col -mt-[1.5rem] z-[5] pt-[3rem]">
+        <main className="blue-gradient section-border-top relative bg-white flex justify-center items-center flex-col -mt-[1.5rem] z-[5] pt-[3rem] pb-[12rem]">
+            <section className="resources-big">
                 <div className="resource-grid">
                     <div className="flex justify-center flex-col ml-[3rem] mt-[4rem]" style={{ gridColumn: "span 2"}}>
-                        <Title style={{ marginInline: "auto", fontSize: '2.5rem' }}>What can we do?</Title>
-                        <div className="w-[37rem] text-left mt-[1rem] text-center text-[1.05rem] mx-auto">For anyone struggling with anxiety, depression, or other mental illness, please SEEK HELP from a professional ASAP, or confide in someone who can get you help.</div>
-                        <hr className="w-[70%] mt-[1.5rem] mb-[1rem] border-t-[0.5px] border-[rgba(0,0,0,0.2)] mx-auto"></hr>
-                        <div className="w-[37rem] text-left mt-[1rem] text-center mb-[3rem] text-[1.05rem] mx-auto">For those fortunate enough not to be afflicted with a mental health disorder, YOU CAN HELP, in big ways and small, by practicing the following:</div>
+                        <Title style={{ marginInline: "auto", fontSize: '2.5rem', textDecoration: 'italic' }}>What can we do?</Title>
+                        <div className="w-[37rem] text-left mt-[1rem] text-center text-[1.05rem] mx-auto">For anyone struggling with anxiety, depression, or other mental illness, please SEEK HELP from a professional ASAP, or confide in someone who can get you help. For those fortunate enough not to be afflicted with a mental health disorder, YOU CAN HELP, in big ways and small, by practicing the following:</div>
+                        <div className="w-[37rem] text-left mt-[1rem] text-center mb-[3rem] text-[1.05rem] mx-auto"></div>
                     </div>
                     <div className="resource-col">
                         <ResourceCard>
@@ -43,7 +42,7 @@ export const Resources = () => {
                     </div>
                 </div>
             </section>
-            <section className="resources-small blue-gradient bg-white section-border-top relative z-[100] flex justify-center items-center flex-col z-[5] pt-[2rem]">
+            <section className="resources-small flex justify-center items-center flex-col z-[5] pt-[2rem]">
                 <div className="mt-[4rem]">
                     <Title className="">What can we do?</Title>
                 </div>
@@ -82,7 +81,15 @@ export const Resources = () => {
                     </div>
                 </div>
             </section>
-        </>
+            {/* Donation Section. */}
+            <section className="mt-[2rem]">
+                <Card>
+                    <div className="w-[32.5rem] text-center">
+                        In addition to being ambassadors for your own and other's mental health, we have launched a fundraiser to support research through the International OCD Foundation. 100% of your donation will go toward research to help understand and improve treatments for teens with OCD. To make a donation please go to:
+                    </div>
+                </Card>
+            </section>
+        </main>
         
     )
 }
