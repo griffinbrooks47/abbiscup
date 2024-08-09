@@ -23,6 +23,8 @@ import { Landing } from "@/components/landing";
 import { About } from "@/components/about";
 import { JaneCambell } from "@/components/janecambell";
 
+import { Element } from "react-scroll";
+
 export default function Home() {
 
   const router = useRouter();
@@ -36,7 +38,9 @@ export default function Home() {
         <Landing />
         <About />
         <JaneCambell />
-        <Resources />
+        <Element name="resources">
+          <Resources />
+        </Element>
         <section className="flex m-auto bg-[#F5F5F5] flex-col pb-[10rem]">
             <div className="mx-auto mt-[5rem] text-[0.85rem] md:text-[1.05rem] w-[85%] md:w-[30rem] text-center">
               As awkward as it may feel, we can ALL show up for our friends and family who might be struggling. These conversations are not easy and as stated earlier, whether it is you or someone else you care about that is struggling, it takes courage to speak up and to engage. Some great suggestions can be found on the webpage called Seize The Awkward, along with some stories of those who have helped, and been helped.

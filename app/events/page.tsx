@@ -1,15 +1,23 @@
+'use client'
 
 import { Button, Paper, Title, Divider } from "@mantine/core"
 import { IconArrowBigRight } from "@tabler/icons-react"
+import { useRouter } from "next/navigation";
 import { ReactNode } from "react"
 
 export default function Events() {
+
+    const router = useRouter();
+
     return (
         <main
             className="blue-gradient h-[100vh] flex flex-col justify-left items-center"
         >
             <Paper shadow="sm" radius="md" withBorder className="event-card mb-[1.5rem] mt-[2rem]">
                 <ShadowCard>
+                    <button className="mr-[auto]" onClick={() => router.push("/")}>
+                        Home
+                    </button>
                     <div className="text-[1.05rem] flex justify-left flex-col w-full">
                         <div>
                             <Title style={{ fontSize: '1.75rem', textAlign: 'center', marginBottom: '0.2rem', textDecoration: 'underline' }}>Abbi&apos;s Cup</Title>
@@ -27,7 +35,7 @@ export default function Events() {
                             <div style={{ fontWeight: 'semi-bold' }}>
                                 19008 Saums Rd, Houston, TX 77084
                             </div>
-                            <Button style={{ fontSize: "1.15rem", marginRight: "auto",marginBlock: "0.75rem", border: "1.5px solid black", borderRadius: '11px', boxShadow: "7px 8px 0px -4px #000000ce", opacity: "100%"}}
+                            <Button style={{ fontSize: "1.15rem", marginInline: "auto",marginBlock: "0.75rem", border: "1.5px solid black", borderRadius: '11px', boxShadow: "7px 8px 0px -4px #000000ce", opacity: "100%"}}
                                 color="#4169E1" 
                                 w="fit-content" 
                                 rightSection={<IconArrowBigRight />} 
@@ -37,7 +45,6 @@ export default function Events() {
                                 target="_blank"
                                 >Directions</a></Button>
                         </div>
-                        <Divider className="my-[0.5rem]"></Divider>
                         <div className="mb-[0.5rem]">
                             <div className="font-bold mt-[0.5rem] mb-[0.5rem]">Agenda:</div>
                             <Divider></Divider>
