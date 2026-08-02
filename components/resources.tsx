@@ -1,6 +1,6 @@
-import { Divider, Title, Card, Button } from "@mantine/core"
-import { IconArrowBigRight } from "@tabler/icons-react"
+import { Divider, Title, Card } from "@mantine/core"
 import { ReactNode } from "react"
+import { CtaButton } from "./ctabutton"
 
 
 export const Resources = () => {
@@ -88,20 +88,7 @@ export const Resources = () => {
                     <div className="text-center px-[0.25rem] pt-[0.5rem] pb-[1rem]">
                         In addition to being ambassadors for your own and other's mental health, we have launched a fundraiser to support research through the International OCD Foundation. 100% of your donation will go toward research to help understand and improve treatments for teens with OCD. To make a donation please go to:
                     </div>
-                    <Button style={{ marginBottom: "1rem", fontSize: "1.15rem", marginInline: "auto", border: "1.5px solid black", borderRadius: '11px', boxShadow: "7px 8px 0px -4px #000000ce", opacity: "100%"}}
-                        color="#4169E1" 
-                        w="fit-content" 
-                        justify="center"
-                        h="3rem">
-                            <a
-                                className="h-full w-full flex justify-center items-center"
-                                href="http://support.iocdf.org/agosta"
-                                target="_blank"
-                            >
-                                <div className="mr-[0.5rem]">Donate</div>
-                                <IconArrowBigRight />
-                            </a>
-                        </Button>
+                    <CtaButton href="http://support.iocdf.org/agosta" className="mb-[1rem] mx-auto">Donate</CtaButton>
                 </Card>
             </section>
         </main>
