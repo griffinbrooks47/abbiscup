@@ -24,15 +24,16 @@ Two routes only: `/` (`page.tsx`) and `/events` (`events/page.tsx`). No loading/
 - Referenced-but-UNDEFINED classes (no-ops in markup today): `.bg-div`, `.content-div` (page.tsx), `.resource-col` (resources.tsx). Defining them WOULD change appearance — don't "complete" them casually.
 
 ## events/page.tsx (`'use client'`) — the annual-update file
-- Hardcodes ALL yearly facts: date, venue, address, Google Maps link, uniform colors, and the full schedule (local `ScheduleItem` component). Stale between tournaments BY DESIGN — never treat its current values as truth about the next event.
+- ALL yearly facts live in the `EVENT` and `SCHEDULE` constants at the top of the file — the JSX below reads from them and should not need editing. Stale between tournaments BY DESIGN; never treat current values as truth about the next event.
+- `MAPS_URL` is DERIVED from `EVENT.address`, and both the venue-name link and the Directions button use it. Don't reintroduce a hardcoded maps URL — the two links drifting apart was the bug this replaced.
+- Schedule rows are uniform time ranges (e.g. `"7:00 – 7:40 pm"`) so the time column aligns without any CSS. Keep that format; bare start times render ragged.
 - The global navbar is hidden here; the page renders its own "Home" button.
-- `parking.pdf` is linked with a RELATIVE href (`href="parking.pdf"`) — it only resolves because `/events` has no trailing slash. Keep the filename, or change to `/parking.pdf` deliberately.
 - Contains one of the live `ShadowCard` copies (see "Copy-paste inventory" in components/CLAUDE.md).
 
 ## Annual update runbook
 Canonical example: `git show 0512b7f` (the 2024-to-2025 refresh commit).
-1. In `events/page.tsx`: update the date, venue name, address, and Google Maps link.
-2. Rewrite the `ScheduleItem` list and the uniforms/teams block.
-3. Replace `public/parking.pdf` if the venue changed.
-4. Check the `components/landing.tsx` tagline/CTA for stale references.
-5. Verify: `npm run build`, then eyeball `/` and `/events` at ≤600px and desktop widths.
+1. In `events/page.tsx`: update the `EVENT` constant (date, venue, address). The maps link updates itself.
+2. Rewrite the `SCHEDULE` array. Concurrent games go in a session entry's `details`; keep every `time` a range.
+3. Check the `components/landing.tsx` tagline/CTA for stale references.
+4. Verify: `npm run build`, then eyeball `/` and `/events` at ≤600px and desktop widths.
+- Blocks can be retired between years (Uniforms and the Parking Map link were dropped for 2026). If one returns, re-add it as a constant, not inline markup.

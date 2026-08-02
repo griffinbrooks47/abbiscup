@@ -7,7 +7,7 @@ The official website for **Abbi's Cup**, an annual charity soccer tournament in 
 ## Pages
 
 - `/` — Abbi's story, ways to help, mental-health resources, and a donation link (International OCD Foundation)
-- `/events` — current tournament details: date, venue, schedule, uniforms, and parking
+- `/events` — current tournament details: date, venue, and schedule
 
 ## Running locally
 
@@ -28,4 +28,4 @@ Hosted on Vercel — pushes to `main` deploy automatically.
 
 ## Yearly updates
 
-Each year's tournament details live directly in `app/events/page.tsx`; the parking map is `public/parking.pdf`. See the "Annual update runbook" in `app/CLAUDE.md` for the full checklist.
+Each year's tournament details live in the `EVENT` and `SCHEDULE` constants at the top of `app/events/page.tsx`. See the "Annual update runbook" in `app/CLAUDE.md` for the full checklist.

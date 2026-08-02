@@ -8,8 +8,8 @@
 | `images/AbbiNew2.png` (~2.8MB) | `components/about.tsx` second biography section |
 | `images/JaneCambell/profile.jpg` | `components/janecambell.tsx` circular portrait |
 | `images/JaneCambell/slide1.png`, `slide2.png`, `slide3.png` | `components/opacityCarousel.tsx` hardcoded slides |
-| `parking.pdf` | `app/events/page.tsx`, via a RELATIVE href; replaced yearly — see "Annual update runbook" in app/CLAUDE.md |
 
+- `parking.pdf` is NOT currently linked — the Parking Map button was removed in the 2026 refresh. Kept on disk because the venue is unchanged and it may be re-linked; don't treat it as live.
 - Favicon is `app/favicon.ico` (wired via layout metadata), not in this folder.
 - Folder spelling `JaneCambell` is legacy-intentional (the person is Jane **Campbell**) — renaming requires coordinated code changes in `components/`.
 - The Abbi photos are oversized multi-MB originals. LEFTOVER — compress only on request.
