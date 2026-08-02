@@ -36,6 +36,10 @@
 - No prev/next buttons, dots, or autoplay are rendered (`embla-carousel-autoplay` is installed but never imported) — swipe/drag only.
 - Internal dead code: `SLIDE_COUNT`, `slides`, `slideImage`. LEFTOVER.
 
+### ctabutton.tsx — the shared blue CTA (`'use client'`)
+- `CtaButton` props: `children`, `href` (external — renders the Mantine Button AS an `<a>` with `target="_blank" rel="noopener noreferrer"`), `to` (internal route via router.push), `height` (default `"3rem"`), `className` (per-call-site margins).
+- Pass `href` OR `to`, never both. Do NOT go back to nesting an `<a>` inside `<Button>` — that left ~74% of the button area dead (only the text navigated); `component="a"` is what makes the whole button clickable.
+
 ### resources.tsx — resource cards + donation
 - THE DUPLICATION TRAP: the four cards (Be Kind / Be Present / Be Courageous / Be Inclusive) exist TWICE, byte-for-byte — a `.resources-big` section (desktop) and a `.resources-small` section (mobile), toggled via CSS display. Every copy/link/style edit must be made in BOTH sections; the intro paragraphs also differ slightly between them.
 - Donation button links to `http://support.iocdf.org/agosta` (plain http — confirm with the user before changing).
@@ -47,7 +51,7 @@
 
 ## Copy-paste inventory
 - `ShadowCard` is defined 3×: `components/landing.tsx` (live), `app/events/page.tsx` (live), `app/page.tsx` (DEAD copy). There is no shared source — edit all live copies together, or extract deliberately.
-- The blue CTA button pattern (`#4169E1` + `IconArrowBigRight` + hard-shadow inline style) appears 4× across landing / home / events. Same rule: grep for siblings before editing one.
+- The blue CTA button is NO LONGER duplicated — it is `components/ctabutton.tsx`, used by all four sites (landing, home, events, resources). This is the one deliberate exception to the copy-paste convention; change the button once, there.
 
 ## Design tokens (de facto — match these for any new UI)
 - Accent: `#4169E1` (royal blue; passed as Mantine Button `color`).

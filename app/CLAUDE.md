@@ -19,6 +19,7 @@ Two routes only: `/` (`page.tsx`) and `/events` (`events/page.tsx`). No loading/
 - Responsive contract: ALL responsive behavior lives in two hand-written media queries — `max-width: 600px` (phone) and `min-width: 601px` (desktop) — defining the SAME ~16 class names with different values (`.section-container` is mobile-only). Every class has two definitions; edit BOTH or the viewports diverge.
 - Tailwind breakpoints are NOT the system here. Sporadic `md:` (768px) usage exists, so 601–767px is a known inconsistency zone — ask before "fixing".
 - Signature classes: `.shadow-div` (the hard offset shadow) and `.blue-gradient` (the REAL site gradient). Values live under "Design tokens" in components/CLAUDE.md.
+- `.event-card` is `width: 90%; max-width: 40rem` in BOTH blocks. Keep it fluid — a fixed `width: 40rem` made the card wider than the viewport from 601–639px, clipping it off the left edge with no scroll to recover.
 - `body { background-color: aquamarine }` — LEFTOVER debug color, normally hidden behind sections. Don't build on it.
 - Dead classes (defined, never used in markup): `.landing-title`, `.section-border-bottom`.
 - Referenced-but-UNDEFINED classes (no-ops in markup today): `.bg-div`, `.content-div` (page.tsx), `.resource-col` (resources.tsx). Defining them WOULD change appearance — don't "complete" them casually.

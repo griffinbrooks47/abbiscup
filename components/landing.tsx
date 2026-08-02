@@ -1,10 +1,9 @@
 'use client'
 
-import { Button } from "@mantine/core";
-import { IconArrowBigRight } from "@tabler/icons-react";
 import Image from "next/image"
 import { useRouter } from "next/navigation"
 import { ReactNode } from "react";
+import { CtaButton } from "./ctabutton";
 
 export function Landing() {
 
@@ -44,13 +43,7 @@ export function Landing() {
                     </div>
                 </div>
                 </div>
-                <Button style={{ marginTop: "1.65rem", fontSize: "1.15rem", marginInline: "auto", border: "1.5px solid black", borderRadius: '11px', boxShadow: "7px 8px 0px -4px #000000ce", opacity: "100%"}}
-                    color="#4169E1" 
-                    w="fit-content" 
-                    rightSection={<IconArrowBigRight />} 
-                    justify="center"
-                    onClick={() => router.push("/events")}
-                    h="3rem">Schedule</Button>
+                <CtaButton to="/events" className="mt-[1.65rem] mx-auto">Schedule</CtaButton>
             </div>
             <div className="h-[3rem]">
             

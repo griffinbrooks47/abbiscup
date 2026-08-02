@@ -1,9 +1,9 @@
 'use client'
 
-import { Button, Paper, Title, Divider } from "@mantine/core"
-import { IconArrowBigRight } from "@tabler/icons-react"
+import { Paper, Title, Divider } from "@mantine/core"
 import { useRouter } from "next/navigation";
 import { ReactNode } from "react"
+import { CtaButton } from "@/components/ctabutton";
 
 /* --- Annual event facts. Update these once a year; nothing below should need edits. --- */
 
@@ -52,7 +52,7 @@ export default function Events() {
         >
             <Paper shadow="sm" radius="md" withBorder className="event-card mb-[1.5rem] mt-[2rem]">
                 <ShadowCard>
-                    <button className="mr-[auto]" onClick={() => router.push("/")}>
+                    <button className="mr-[auto] underline underline-offset-2 py-[0.65rem] pr-[0.75rem]" onClick={() => router.push("/")}>
                         Home
                     </button>
                     <div className="text-[1.05rem] flex justify-left flex-col w-full">
@@ -63,24 +63,17 @@ export default function Events() {
                         <div className="flex flex-col">
                             <div className="font-bold mt-[0.5rem] text-[1.25rem]">Location</div>
                             <Divider className="my-[0.5rem]"></Divider>
-                            <a style={{ fontWeight: 'semi-bold' }}
+                            <a style={{ fontWeight: 600, color: "#4169E1", textDecoration: 'underline' }}
                                 href={MAPS_URL}
                                 target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 {EVENT.venue}
                             </a>
-                            <div style={{ fontWeight: 'semi-bold' }}>
+                            <div style={{ fontWeight: 600 }}>
                                 {EVENT.address}
                             </div>
-                            <Button style={{ fontSize: "1.15rem", marginInline: "right",marginBlock: "0.75rem", border: "1.5px solid black", borderRadius: '11px', boxShadow: "7px 8px 0px -4px #000000ce", opacity: "100%"}}
-                                color="#4169E1"
-                                w="fit-content"
-                                rightSection={<IconArrowBigRight />}
-                                justify="right"
-                                h="2.5rem"><a
-                                href={MAPS_URL}
-                                target="_blank"
-                                >Directions</a></Button>
+                            <CtaButton href={MAPS_URL} height="2.5rem" className="my-[0.75rem]">Directions</CtaButton>
                         </div>
                         <div className="">
                             <div className="font-bold mt-[0.75rem] text-[1.25rem]">Tournament Schedule</div>
@@ -122,7 +115,7 @@ function ScheduleItem(props: ScheduleEntry) {
 
 function ShadowCard(props: {children: ReactNode}) {
     return (
-      <div className="border-[1.25px] border-black shadow-div bg-white pl-[1.75rem] md:pl-[2.25rem] pr-[1.35rem] py-[1.5rem] flex justify-center items-center rounded-md flex-col">
+      <div className="border-[1.25px] border-black shadow-div bg-white px-[1.55rem] md:px-[1.8rem] py-[1.5rem] flex justify-center items-center rounded-md flex-col">
         {props.children}
       </div>
     )
